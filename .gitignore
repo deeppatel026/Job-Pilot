@@ -1,0 +1,38 @@
+# Dependencies
+node_modules/
+
+# Config with real API keys — never commit this
+config.yaml
+
+# Build output
+dist/
+*.js.map
+
+# Resume output — contains personal info
+output/
+
+# Run logs
+logs/
+
+# Your actual resume base — contains personal info
+# Remove this line if you want to share your resume template
+resume_base.tex
+
+# LaTeX compilation artifacts
+*.aux
+*.log
+*.out
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+
+# macOS
+.DS_Store
+
+# Editor
+.vscode/settings.json
+.idea/
+
+# Environment
+.env
+*.env.local

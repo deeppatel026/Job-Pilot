@@ -1,0 +1,40 @@
+# job-pilot configuration
+# Copy this to config.yaml and fill in your values
+# config.yaml is gitignored — your keys stay local
+
+keys:
+  anthropic: "YOUR_ANTHROPIC_API_KEY"      # console.anthropic.com
+  hunter: ""                                # optional: hunter.io (25 free searches/mo)
+  apollo: ""                                # optional: apollo.io (50 free credits/mo)
+
+candidate:
+  name: "Your Name"
+  email: "you@email.com"
+  phone: "000-000-0000"
+  linkedin: "linkedin.com/in/yourhandle"
+  github: "github.com/yourusername"
+  location: "City, State"
+  visa: ""                                  # e.g. "STEM OPT", "US Citizen", "H1B"
+  experience_years: 3
+  target_roles:
+    - "Software Engineer L4"
+    - "SDE2"
+    - "Backend Engineer"
+
+gmail:
+  enabled: true
+  sender: "you@gmail.com"
+  # Generate at: Google Account → Security → App Passwords
+  # Use an App Password, NOT your regular Gmail password
+  app_password: "xxxx xxxx xxxx xxxx"
+
+linkedin:
+  enabled: true
+  mode: "clipboard"       # Copies message to clipboard — LinkedIn blocks automation
+
+settings:
+  resume_base: "resume_base.tex"
+  output_dir: "output"
+  default_model: "claude-opus-4-5"
+  auto_submit_after: 10   # Switch from review mode to auto-submit after N runs
+  runs_completed: 0       # Auto-incremented — reset to 0 to re-enable review mode
